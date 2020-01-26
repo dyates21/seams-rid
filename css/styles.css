@@ -1,0 +1,136 @@
+/* TODO: Make statment text more mobile friendly by adding bootstrap grid. change color of nav-links */
+
+/* Multiple selectors */
+h1, h2, h3, h4, h5, h6 {
+  font: "Montserrat";
+  color: white;
+}
+
+p {
+  font-family: "Montserrat";
+  color: #8F8F8F;
+}
+
+body {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+.image-size{
+  width:100%;
+  height:100%;
+}
+
+.logo-size{
+  max-width: 15rem;
+  min-width: 15rem;
+}
+/* This page is essentially two containers sitting on top of each other. container1
+has the background image while container2 has navbar and statement section.  */
+/*containers*/
+.container-1 {
+    position:relative;
+}
+
+.container-2 {
+   font-weight: bold;
+   position: absolute;
+   top:0;
+   left:-3rem;
+}
+
+/* setting container-1 to realative and container-2 to absolute was suppose to
+automatically stack both containers on top of each other but it didn't do it.
+I had to ad the top:0 in order for container-2 to move on top of container-2.  */
+
+
+/*sections*/
+
+
+.statement-text{
+  width:50%;
+  padding-left:10rem;
+  padding-top:5rem;
+  font-family:"Montserrat";
+  font-weight:bold;
+  text-align: left;
+}
+
+
+
+/*HEADINGS*/
+.header-large {
+  font-size: 3.6rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+
+.section-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+/* STATEMENT SECTION */
+
+/* Hierarchical Selectors- You can target certain classes within different divs by giving the id of the div.
+the code below allows you to modify the container fluid class within the statement-sec
+div without changing all the other places that use the container-fluid class.  */
+#statement-sec .container-fluid {
+  padding:3% 15% 7%;
+  text-align: left;
+}
+
+/* Navigation bar styling */
+
+.navbar {
+    /* padding: 2rem 5rem 5rem 5rem; */
+}
+
+.navbar-brand {
+  padding-left:8rem;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat";
+  font-weight: 900;
+}
+
+
+/* This media query cleans up the site when the screen gets below a tablet size.
+Bootstrap grid is doing a lot of the work, but this query will fine tune certain
+things. This query will straighten the title-image back to straight up and down
+while adding it back to the general flow of HtML. It will also text align the
+text on the screen. */
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+}
+
+
+/* FOOTER */
+.footer{
+  background-color:black;
+  padding-bottom:2rem;
+  padding-top:2rem;
+}
+
+.grey-write {
+  color: grey;
+}
+
+.logos {
+  color:white;
+  padding: 1%;
+}

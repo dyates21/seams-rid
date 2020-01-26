@@ -1,2 +1,1 @@
-# seams-rid
-initial upload of seams ridiculous
+TinDog Starting Files
